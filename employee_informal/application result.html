@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>Job Application for the Post of {Graphic Designer}</title>
+<style>
+   	h1{
+    	text-align: center;
+               color:blue;
+    }
+div.div1 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  margin:10px;
+ } 
+div.div2 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  }
+div.div3 {
+  margin:20px;
+  width: 100%;
+ 
+  }
+div.div4 {
+  position: absolute;
+  right: 50px;
+  width: 200px;
+  height: 140px;
+  }
+  
+body{
+  background-image: url("bg.jpeg");
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+div.divn {
+  font-size: 20px;
+}
+   </style>
+</head>
+<body >
+<h1>Job Application for the Post of Graphic Designer</h1>
+<div class="divn">
+<br>
+<p>To</p>
+<div class="div2">
+<span id="to"></span>
+<script>        document.getElementById("to").innerHTML = localStorage.getItem("to"); </script>
+</div>
+
+<br><br><br><br><br>
+<br><br><br><br>
+
+<p>Subject: Job Application for the Post of {Graphic Designer}</p>
+<br>
+<p>Respected Sir/Madam,</p>
+<br>
+<div class="div3">
+<p>I am very interested in the position of Graphic Designer at your esteemed organization. I came across the position via your advertisement in 
+<span id="Portal"></span>
+
+    <script>
+        document.getElementById("Portal").innerHTML = localStorage.getItem("Portal");   
+   </script>
+<br><br>
+Currently, I am working with <span id="company"></span>
+
+    <script>
+        document.getElementById("company").innerHTML = localStorage.getItem("company");   
+   </script>, and I have been handling a wide range of high profile projects. I have been working on Adobe Creative Suite for the last 4 years.
+<br<br>
+I am confident that my skills perfectly match your requirements. I have attached my detailed profile to this email for your consideration.
+<br><br>
+Thank you for considering my application. I hope you find it suitable so that we can arrange a meeting.</p>
+</div>
+<br><br>
+<p>Thanking you</p>
+<br>
+<div class="div4">
+<p>Yours faithfully,</p>
+<br>
+<span id="resultName"></span>
+
+    <script>
+        document.getElementById("resultName").innerHTML = localStorage.getItem("name");   
+   </script>
+</div>
+</div>
+</body>
+</html>

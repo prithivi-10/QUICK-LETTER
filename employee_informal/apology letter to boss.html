@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>Apology Letter to Boss </title>
+<style>
+   	h1{
+    	text-align: center;
+               color:blue;
+    }
+div.div2 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  }
+div.div3 {
+  margin:20px;
+  width: 100%;
+ 
+  }
+div.div4 {
+  position: absolute;
+  right: 50px;
+  width: 200px;
+  height: 140px;
+  }
+div.divn {
+  font-size: 20px;
+}
+body{
+  background-image: url("bg.jpeg");
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+button {
+  background-color: rgb(113, 215, 237);
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+  width: 100%;
+  border-radius: 12px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover{
+ transform: scale(1.3);
+ background-color: aqua;
+}
+   </style>
+   <script>
+    function getInput(){
+      var name = document.getElementById("name").value;
+      localStorage.setItem("name",name);
+
+    
+      
+      var to = document.getElementById("to").value;
+      localStorage.setItem("to",to);
+    }
+  </script>
+</head>
+<body >
+<h1>Apology Letter to Boss </h1>
+<br>
+<p>To</p>
+<div class="div2">
+
+<textarea id="to"  rows="4" cols="50"></textarea>
+</div>
+
+<br><br><br><br><br>
+<p>Respected Sir/Madam,</p>
+<br>
+<div class="div3">
+<p>This is to apologize to you for my inappropriate behavior last time. I was extremely annoyed because of the condition around and I just could not hold my temper. I understand that this kind of attitude is absolutely bad and now I have realized that I should apologize for it. You being my senior I truly respect you and it was just for the moment. I surely regret my misbehavior. I am really for that.Please consider my apology and allow me to resume my job. I promise not to repeat it and would learn some anger management strategies too. I hope you would understand my condition and will grant me permission to join again. I hope to hear from you soon.
+</p>
+</div>
+<br><br>
+<p>Thanking you</p>
+<br>
+<div class="div4">
+<p>Yours faithfully,</p>
+<br>
+<textarea id="name"  rows="2" cols="25"></textarea>
+</div>
+<br><br><br><br><br>
+<br><br><br><br>
+<a href="./apology letter to boss result.html" onclick="getInput()"><button>Submit</button> </a>
+</div>
+</body>
+</html>

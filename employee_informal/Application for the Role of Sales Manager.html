@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>Application for the Role of {Sales Manager}</title>
+<style>
+   	h1{
+    	text-align: center;
+               color:blue;
+    }
+div.div2 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  }
+div.div3 {
+  margin:20px;
+  width: 100%;
+ 
+  }
+div.div4 {
+  position: absolute;
+  right: 50px;
+  width: 200px;
+  height: 140px;
+  }
+div.divn {
+  font-size: 20px;
+}
+body{
+  background-image: url("bg.jpeg");
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+button {
+  background-color: rgb(113, 215, 237);
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+  width: 100%;
+  border-radius: 12px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover{
+ transform: scale(1.3);
+ background-color: aqua;
+}
+   </style>
+   <script>
+    function getInput(){
+      var name = document.getElementById("name").value;
+      localStorage.setItem("name",name);
+
+     var Institute = document.getElementById("Institute").value;
+      localStorage.setItem("Institute",Institute);
+
+      var reason = document.getElementById("reason").value;
+      localStorage.setItem("reason",reason);
+     
+     var days = document.getElementById("days").value;
+      localStorage.setItem("days",days);    
+      
+      var to = document.getElementById("to").value;
+      localStorage.setItem("to",to);
+    }
+  </script>
+</head>
+<body >
+<h1>Application for the Role of Sales Manager</h1>
+<br>
+<p>To</p>
+<div class="div2">
+<textarea id="to"  rows="4" cols="50"></textarea>
+</div>
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+<p>Respected Sir/Madam,</p>
+<br>
+<br>
+<p>Subject: Application for the Role of Sales Manager</p><br<br>
+<div class="div3">
+<p>This is with reference to your job requirement on <textarea id="reason"  rows="2" cols="25" placeholder="portal name"></textarea> for the role of Sales Manager. I truly believe that my qualifications and experience make me a perfect candidate for the job.
+<br><br>
+I completed my MBA in Sales and Marketing from <textarea id="Institute"  rows="2" cols="25" placeholder="Institute Name"></textarea>. I have worked as an Area Sales Manager and Assistant Marketing Manager at {Company Name}<textarea id="days"  rows="2" cols="25"></textarea>. During my stint as Area Sales Manager, I conceptualised and executed a Customer Engagement Program that resulted in higher sales. As Assistant Marketing Manager, I worked on the planning and execution of a new product launch. With 4 years of experience in B2B sales and marketing, I have an in-depth understanding of the process. I am confident that I will be the right fit for the job.
+<br><br>
+I have attached my CV to the email for your reference. Please have a look at it.
+<br><br>
+I hope to meet you and discuss this opportunity further. Thank you for considering my application for the role.
+</p>
+</div>
+<br><br>
+<p>Thanking you</p>
+<br>
+<div class="div4">
+<p>Yours faithfully,</p>
+<br>
+<textarea id="name"  rows="2" cols="25" placeholder="Name"></textarea>
+</div>
+<br><br><br><br><br>
+<br><br><br><br>
+<a href="./Application for the Role of Sales Manager result.html" onclick="getInput()"><button>Submit</button> </a>
+</div>
+</body>
+</html>

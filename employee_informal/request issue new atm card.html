@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>Request to issue New ATM Card</title>
+<style>
+   	h1{
+    	text-align: center;
+               color:blue;
+    }
+div.div2 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  }
+div.div3 {
+  margin:20px;
+  width: 100%;
+ 
+  }
+div.div4 {
+  position: absolute;
+  right: 50px;
+  width: 200px;
+  height: 140px;
+  }
+div.divn {
+  font-size: 20px;
+}
+body{
+  background-image: url("bg.jpeg");
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+button {
+  background-color: rgb(113, 215, 237);
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+  width: 100%;
+  border-radius: 12px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover{
+ transform: scale(1.3);
+ background-color: aqua;
+}
+   </style>
+   <script>
+    function getInput(){
+      var name = document.getElementById("name").value;
+      localStorage.setItem("name",name);
+
+     var address = document.getElementById("address").value;
+      localStorage.setItem("address",address);    
+
+     var mobile = document.getElementById("mobile").value;
+      localStorage.setItem("mobile",mobile);    
+      
+      var to = document.getElementById("to").value;
+      localStorage.setItem("to",to);
+    }
+  </script>
+</head>
+<body >
+<h1>Request to issue New ATM Card</h1>
+<br>
+<p>To</p>
+<div class="div2">
+<p>The Bank Manager,</p><br>
+<textarea id="to"  rows="4" cols="50"></textarea>
+</div>
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+<p>Respected Sir/Madam,</p>
+<br>
+<br>
+<p>Subject: Request to issue new ATM card.</p><br<br>
+<div class="div3">
+<p>I am an account holder in your branch at <textarea id="address"  rows="2" cols="25"></textarea>. My current ATM card is damaged and am unable to use it at any POS transaction. I would like to request you to issue a new ATM card at the earliest. I prefer card-transactions over cash. hence. I would be very thankful if you could process my request at the earliest. I will surrender my damaged ATM card if the process requires so. I have also added my account details for you to process my request. If you need any other details from my end, kindly contact me on my mobile. <textarea id="mobile"  rows="2" cols="25"></textarea>
+</p>
+</div>
+<br><br>
+<p>Thanking you</p>
+<br>
+<div class="div4">
+<p>Yours faithfully,</p>
+<br>
+<textarea id="name"  rows="2" cols="25"></textarea>
+</div>
+<br><br><br><br><br>
+<br><br><br><br>
+<a href="./request issue new atm card result.html" onclick="getInput()"><button>Submit</button> </a>
+</div>
+</body>
+</html>

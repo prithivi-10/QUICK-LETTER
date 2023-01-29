@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Request to issue New ATM Card </title>
+<style>
+   	h1{
+    	text-align: center;
+               color:blue;
+    }
+div.div1 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  margin:10px;
+ } 
+div.div2 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  }
+div.div3 {
+  margin:20px;
+  width: 100%;
+ 
+  }
+div.div4 {
+  position: absolute;
+  right: 50px;
+  width: 200px;
+  height: 140px;
+  }
+  
+body{
+  background-image: url("bg.jpeg");
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+div.divn {
+  font-size: 20px;
+}
+   </style>
+</head>
+<body >
+<h1>Request to issue New ATM Card</h1>
+<div class="divn">
+<br>
+<p>To</p>
+<div class="div2">
+<span id="to"></span>
+<script>        document.getElementById("to").innerHTML = localStorage.getItem("to"); </script>
+</div>
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br>
+<p>Respected Sir/Madam,</p>
+<br>
+<br>
+<p>Subject: Request to issue new ATM card.</p><br<br>
+<div class="div3">
+<p>I am an account holder in your branch at <span id="address"></span>
+
+    <script>
+        document.getElementById("address").innerHTML = localStorage.getItem("address");   
+   </script>. My current ATM card is damaged and am unable to use it at any POS transaction. I would like to request you to issue a new ATM card at the earliest. I prefer card-transactions over cash. hence. I would be very thankful if you could process my request at the earliest. I will surrender my damaged ATM card if the process requires so. I have also added my account details for you to process my request. If you need any other details from my end, kindly contact me on my mobile.<span id="mobile"></span>
+
+    <script>
+        document.getElementById("mobile").innerHTML = localStorage.getItem("mobile");   
+   </script>. </p>
+</div>
+<br><br>
+<p>Thanking you</p>
+<br>
+<div class="div4">
+<p>Yours faithfully,</p>
+<br>
+<span id="resultName"></span>
+
+    <script>
+        document.getElementById("resultName").innerHTML = localStorage.getItem("name");   
+   </script>
+</div>
+</div>
+</body>
+</html>
