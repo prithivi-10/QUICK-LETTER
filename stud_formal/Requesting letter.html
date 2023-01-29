@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>Requesting letter</title>
+<style>
+   	h1{
+    	text-align: center;
+               color:blue;
+    }
+div.div1 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  margin:10px;
+ } 
+div.div2 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  }
+div.div3 {
+  margin:20px;
+  width: 100%;
+ 
+  }
+div.div4 {
+  position: absolute;
+  right: 50px;
+  width: 200px;
+  height: 140px;
+  }
+div.divn {
+  font-size: 20px;
+}
+body{
+  margin: 40px;
+  background-image: url("bg.jpeg");
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+button {
+  background-color: rgb(113, 215, 237);
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+  width: 100%;
+  border-radius: 12px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover{
+ transform: scale(1.3);
+ background-color: aqua;
+}
+   </style>
+   <script>
+    function getInput(){
+      
+      var from = document.getElementById("from").value;
+      localStorage.setItem("from",from);
+      
+      var to = document.getElementById("to").value;
+      localStorage.setItem("to",to);
+    }
+  </script>
+</head>
+<body >
+<h1>Requesting letter</h1>
+<div class="divn">
+<p>From</p>
+<div class="div1">
+  <textarea id="from"  rows="4" cols="50"></textarea>
+</div>
+<br>
+<br><br><br><br>
+<p>To</p>
+<div class="div2">
+
+<textarea id="to"  rows="4" cols="50"></textarea>
+</div>
+
+<br><br><br><br><br>
+<br><br><br><br>
+
+<p>Subject: Request to take part in culturals</p>
+<br>
+<p>Respected Sir/Madam,</p>
+<br>
+<div class="div3">
+<p>It gives me immense pleasure to announce that our college is celebrating its -------------(reason) this year. We intend to take this auspicious occasion to organize a Cultural Fest  on the __( date) from (time) in our college auditorium. The Fest reflects the spirit of youth and provides a platform for the students to show case their talents In various spheres that cover the many versatile aspects of our culture. Dance, classical music, singing, a fashion show, a play, and stand up comedy are some of the programmes lined up for the day. I am writing to request your honourable presence along with your staff in gracing the event. It will be our pleasure to have you as a part of ------------(event name) so that we can make the Fest bigger and brighter. Earnestly waiting for a favourable response</p>
+</div>
+<br><br>
+<p>Thanking you</p>
+<br>
+<div class="div4">
+<p>Yours faithfully,</p>
+<br>
+<p>_(your name)</p>
+</div>
+<br><br><br><br><br>
+<br><br><br><br>
+<a href="./Requesting result.html" onclick="getInput()"><button>Submit</button> </a>
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Enquiry Letter</title>
+<style>
+   	h1{
+    	text-align: center;
+               color:blue;
+    }
+div.div1 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  margin:10px;
+ } 
+div.div2 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  }
+div.div3 {
+  margin:20px;
+  width: 100%;
+ 
+  }
+div.div4 {
+  position: absolute;
+  right: 50px;
+  width: 200px;
+  height: 140px;
+  }
+  
+body{
+  margin: 40px;
+  background-image: url("bg.jpeg");
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+div.divn {
+  font-size: 20px;
+}
+   </style>
+</head>
+<body >
+<h1>Enquiry Letter</h1>
+<div class="divn">
+<p>From</p>
+<div class="div1">
+    <span id="resultName"></span>
+
+    <script>
+        document.getElementById("resultName").innerHTML = localStorage.getItem("from");   
+   </script>
+<br>
+</div>
+<br>
+<br><br><br><br>
+<p>To</p>
+<div class="div2">
+<p>The Principal,</p>
+<br>
+<span id="to"></span>
+<script>        document.getElementById("to").innerHTML = localStorage.getItem("to"); </script>
+</div>
+
+<br><br><br><br><br>
+<br><br><br><br>
+
+<p>Subject: Enquiry regarding English speaking courses.</p>
+<br>
+<p>Respected Sir/Madam,</p>
+<br>
+<div class="div3">
+<p>I am writing to enquire about English speaking courses at your institute. I would be grateful if you could send me further details regarding courses In (month). I would like to know the starting dates, duration, details about different types of courses and how much they cost. I would also like to know the strength of each batch. In addition, I would like to have further information about the availability of accommodation close to your institute. I would be grateful if you could give me a prompt response so that I can take timely decision to join your institute.
+
+</p>
+</div>
+<p>Thanking you</p>
+<br>
+<div class="div4">
+<p>Yours faithfully,</p>
+<br>
+<p>_(your name)</p>
+</div>
+</div>
+</body>
+</html>

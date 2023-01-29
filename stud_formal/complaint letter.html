@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>complaint letter</title>
+<style>
+   	h1{
+    	text-align: center;
+               color:blue;
+    }
+div.div1 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  margin:10px;
+ } 
+div.div2 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  }
+div.div3 {
+  margin:20px;
+  width: 100%;
+ 
+  }
+div.div4 {
+  position: absolute;
+  right: 50px;
+  width: 200px;
+  height: 140px;
+  }
+div.divn {
+  font-size: 20px;
+}
+body{
+  margin: 40px;
+  background-image: url("bg.jpeg");
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+button {
+  background-color: rgb(113, 215, 237);
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+  width: 100%;
+  border-radius: 12px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover{
+ transform: scale(1.3);
+ background-color: aqua;
+}
+   </style>
+   <script>
+    function getInput(){
+      
+      var from = document.getElementById("from").value;
+      localStorage.setItem("from",from);
+      
+      var to = document.getElementById("to").value;
+      localStorage.setItem("to",to);
+    }
+  </script>
+</head>
+<body >
+<h1>complaint letter about food</h1>
+<div class="divn">
+<p>From</p>
+<div class="div1">
+  <textarea id="from"  rows="4" cols="50"></textarea>
+</div>
+<br>
+<br><br><br><br>
+<p>To</p>
+<div class="div2">
+<p>The Principal,</p>
+<textarea id="to"  rows="4" cols="50"></textarea>
+</div>
+
+<br><br><br><br><br>
+<br><br><br><br>
+
+<p>Subject: Complaint Regarding Food Quality</p>
+<br>
+<p>Respected Sir/Madam,</p>
+<br>
+<div class="div3">
+<p>I am writing to complain about a meal we had in our canteen yesterday. We had ordered foods but we had to wait for more than 20
+minutes to get it.
+From a menu of 12 dishes, only few were available and their quality was poor. 
+We have eaten in our cantten several times in the past but this is the first time we have received such bad treatment. I am not asking for a refund but I would like you to improve the quality of your dishes and service.
+</p>
+</div>
+<br><br>
+<p>Thanking you</p>
+<br>
+<div class="div4">
+<p>Yours faithfully,</p>
+<br>
+<p>_(your name)</p>
+</div>
+<br><br><br><br><br>
+<br><br><br><br>
+<a href="./complaint result.html" onclick="getInput()"><button>Submit</button> </a>
+</div>
+</body>
+</html>

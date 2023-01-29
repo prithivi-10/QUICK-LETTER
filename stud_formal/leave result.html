@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Leave letter</title>
+<style>
+   	h1{
+    	text-align: center;
+      color:blue;
+    }
+div.div1 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  margin:10px;
+ } 
+div.div2 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  }
+div.div3 {
+  margin:20px;
+  width: 100%;
+ 
+  }
+div.div4 {
+  position: absolute;
+  right: 50px;
+  width: 200px;
+  height: 140px;
+  }
+  
+body{
+  margin: 40px;
+  background-image: url("bg.jpeg");
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+div.divn {
+  font-size: 20px;
+}
+   </style>
+</head>
+<body >
+<h1>Leave letter</h1>
+<div class="divn">
+<p>From</p>
+<div class="div1">
+    <span id="resultName"></span>
+
+    <script>
+        document.getElementById("resultName").innerHTML = localStorage.getItem("from");   
+   </script>
+<br>
+</div>
+<br>
+<br><br><br><br>
+<p>To</p>
+<div class="div2">
+<p>The Principal,</p>
+<br>
+<span id="to"></span>
+<script>        document.getElementById("to").innerHTML = localStorage.getItem("to"); </script>
+</div>
+
+<br><br><br><br><br>
+<br><br><br><br>
+
+<p>Subject:One day leave application</p>
+<br>
+<p>Respected Sir/Madam,</p>
+<br>
+<div class="div3">
+<p>As i <span id="reason"></span>
+
+  <script>
+      document.getElementById("reason").innerHTML = localStorage.getItem("reason");   
+ </script>, i was unable to attend the class. So, please grant me leave for <span id="days"></span>
+
+<script>
+    document.getElementById("days").innerHTML = localStorage.getItem("days");   
+</script> day.</p>
+</div>
+<br><br>
+<p>Thanking you</p>
+<br>
+<div class="div4">
+<p>Yours faithfully,</p>
+<br><span id="name"></span>
+<script>document.getElementById("name").innerHTML = localStorage.getItem("name"); </script>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Order Letter</title>
+<style>
+   	h1{
+    	text-align: center;
+               color:blue;
+    }
+div.div1 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  margin:10px;
+ } 
+div.div2 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  }
+div.div3 {
+  margin:20px;
+  width: 100%;
+  
+  }
+div.div4 {
+  position: absolute;
+  right: 50px;
+  width: 200px;
+  height: 140px;
+  }
+div.divn {
+  font-size: 20px;
+}
+   </style>
+</head>
+<body >
+<h1>Order Letter</h1>
+<div class="divn">
+<p>From</p>
+<div class="div1">
+  <span id="resultName"></span>
+
+  <script>
+      document.getElementById("resultName").innerHTML = localStorage.getItem("from");   
+ </script>
+</div>
+<br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<p>To</p>
+<div class="div2">
+<p>     The Teacher,</p>
+<br>
+<span id="to"></span>
+<script>        document.getElementById("to").innerHTML = localStorage.getItem("to"); </script>
+
+</div>
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+<p>Subject: Order for 200 copies of Science</p>
+<br>
+<p>Respected Sir/Madam,</p>
+<br>
+<div class="div3">
+<p>As per our discussions on ___ (meeting date), we are happy to set an order for 200 copies of the Science book by ____ (writer) for Class IX for the ICSE Board on the following terms and conditions:<br>
+<br>
+1.The price of each book will be Rs __ (inclusive of all taxes)<br>
+2.Shipment will be made within 7 days from the order date.<br>
+3.Order not delivered as per the above conditions, the order stands cancelled.<br>
+<br>
+Please find attached cheque number ____ dated ___ for Rs ____ towards advance for the order.
+</p>
+</div>
+<br><br>
+<p>Thanking you</p>
+<br>
+<div class="div4">
+<p>With Regards,</p>
+<br>
+<p>___(Name of signing authority)</p>
+</div>
+<br><br><br><br><br>
+<br><br><br><br>
+<a href="#">Submit</a>
+</div>
+</body>
+</html>
