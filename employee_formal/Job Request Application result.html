@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Job Request Application</title>
+<style>
+   	h1{
+    	text-align: center;
+               color:blue;
+    }
+div.div1 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  margin:10px;
+ } 
+div.div2 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  }
+div.div3 {
+  margin:20px;
+  width: 100%;
+ 
+  }
+div.div4 {
+  position: absolute;
+  right: 50px;
+  width: 200px;
+  height: 140px;
+  }
+  
+body{
+  background-image: url("bg.jpeg");margin: 20px;
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+div.divn {
+  font-size: 20px;
+}
+   </style>
+</head>
+<body >
+<h1>Job Request Application</h1>
+<div class="divn">
+<p>From</p>
+<div class="div1">
+    <span id="resultName"></span>
+
+    <script>
+        document.getElementById("resultName").innerHTML = localStorage.getItem("from");   
+   </script>
+<br>
+</div>
+<br>
+<br><br><br><br>
+<p>To</p>
+<div class="div2">
+<span id="to"></span>
+<script>        document.getElementById("to").innerHTML = localStorage.getItem("to"); </script>
+</div>
+
+<br><br><br><br><br>
+<br><br><br><br>
+
+<p>Subject: Job Request Application.</p>
+<br>
+<p>Respected Sir/Madam,</p>
+<br>
+<div class="div3">
+<p>I am writing this letter in reference to the job application which you posted on (website) on(date). I believe that I am the ideal candidate for the position of Sales Manager at your esteemed organisation. I have the required qualifications as well as the necessary experience and skill set for the job. I also have excellent communication and presentation skills, which are deemed crucial for the job. usTopper
+
+I have attached my resume as well as other supporting documents for your reference. Kindly consider my application for the advertised post. I shall work hard and come up to your expectations if given a chance.
+
+Awaiting the opportunity to speak with you.</p>
+</div>
+<br><br>
+<p>Thanking you</p>
+<br>
+<div class="div4">
+<p>Yours faithfully,</p>
+<br>
+<p>_(your name)</p>
+</div>
+</div>
+</body>
+</html>

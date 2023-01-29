@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Requesting internship Application</title>
+<style>
+   	h1{
+    	text-align: center;
+               color:blue;
+    }
+div.div1 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  margin:10px;
+ } 
+div.div2 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  }
+div.div3 {
+  margin:20px;
+  width: 100%;
+ 
+  }
+div.div4 {
+  position: absolute;
+  right: 50px;
+  width: 200px;
+  height: 140px;
+  }
+  
+body{
+  background-image: url("bg.jpeg");
+  background-repeat: no-repeat;margin: 20px;
+    background-size: cover;
+}
+div.divn {
+  font-size: 20px;
+}
+   </style>
+</head>
+<body >
+<h1>Requesting internship Application</h1>
+<div class="divn">
+<p>From</p>
+<div class="div1">
+    <span id="resultName"></span>
+
+    <script>
+        document.getElementById("resultName").innerHTML = localStorage.getItem("from");   
+   </script>
+<br>
+</div>
+<br>
+<br><br><br><br>
+<p>To</p>
+<div class="div2">
+<span id="to"></span>
+<script>        document.getElementById("to").innerHTML = localStorage.getItem("to"); </script>
+</div>
+
+<br><br><br><br><br>
+<br><br><br><br>
+
+<p>Subject: Requesting internship Application</p>
+<br>
+<p>Respected Sir/Madam,</p>
+<br>
+<div class="div3">
+<p>I am writing to you to apply for the product management internship at __ (company name)
+
+I’m a student at a Tier I college with a major in software engineering and I believe I would be a good fit for the role.
+
+Your company’s mission statement to reinvent app interfaces resonates with my thought process and I’m looking forward to graduating under your mentorship.
+
+I recently participated in a hackathon with 3 friends where we were to code for a prototype interface within 10 hours.
+
+It was a test of my talent as I was put on the spot with a tight deadline and a very difficult assignment.
+
+I demonstrated quick, on the feet decision-making, leading to the invention of my prototype for health insurance.
+
+We faced a few glitches but soon smoothed them out. I also got a chance at customer interaction with the beta testing in process.
+
+I’ve led my team in science projects and believe in smart work and growing exponentially in life. With this experience, I strengthened my quick problem-solving skills and communication skills.
+
+And I feel that I could get more relevant exposure with your organization.
+
+Awaiting the opportunity to speak with you.</p>
+</div>
+<br><br>
+<p>Thanking you</p>
+<br>
+<div class="div4">
+<p>Yours faithfully,</p>
+<br>
+<p>_(your name)</p>
+</div>
+</div>
+</body>
+</html>

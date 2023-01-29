@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Application for the Post of {Software Developer}</title>
+<style>
+   	h1{
+    	text-align: center;
+               color:blue;
+    }
+div.div1 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  margin:10px;
+ } 
+div.div2 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  }
+div.div3 {
+  margin:20px;
+  width: 100%;
+ 
+  }
+div.div4 {
+  position: absolute;
+  right: 50px;
+  width: 200px;
+  height: 140px;
+  }
+div.divn {
+  font-size: 20px;
+}
+body{
+  background-image: url("bg.jpeg");margin: 20px;
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+button {
+  background-color: rgb(113, 215, 237);
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+  width: 100%;
+  border-radius: 12px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover{
+ transform: scale(1.3);
+ background-color: aqua;
+}
+   </style>
+   <script>
+    function getInput(){
+      
+      var from = document.getElementById("from").value;
+      localStorage.setItem("from",from);
+      
+      var to = document.getElementById("to").value;
+      localStorage.setItem("to",to);
+    }
+  </script>
+</head>
+<body >
+<h1>Application for the Post of Software Developer</h1>
+<div class="divn">
+<p>From</p>
+<div class="div1">
+  <textarea id="from"  rows="4" cols="50"></textarea>
+</div>
+<br>
+<br><br><br><br>
+<p>To</p>
+<div class="div2">
+
+<textarea id="to"  rows="4" cols="50"></textarea>
+</div>
+
+<br><br><br><br><br>
+<br><br><br><br>
+
+<p>Subject: Application for the Post of Software Developer</p>
+<br>
+<p>Respected Sir/Madam,</p>
+<br>
+<div class="div3">
+<p>This is regarding your post on {Portal} about a vacancy in your company for the role of Software Developer. Please accept my application for the same.
+
+Here is a brief about myself. I have completed B.Tech in Computer Science from {Institute Name}. I secured {Marks/Grade} in my final exams and passed with {distinction/Percentage}.
+
+During my studies, I participated in various tech fests and also won a gold medal for creating an app from scratch in an inter-university tech competition.
+
+I am confident that I have the skills to excel at your dynamic organisation. I have always dreamed of being a part of your company due to the development opportunities you provide. I request you to give me an opportunity to learn and grow at your esteemed firm through this job role.
+
+Please refer to my resume and cover letter, attached with the email, for detailed information.</p>
+</div>
+<br><br>
+<p>Thanking you</p>
+<br>
+<div class="div4">
+<p>Yours faithfully,</p>
+<br>
+<p>_(your name)</p>
+</div>
+<br><br><br><br><br>
+<br><br><br><br>
+<a href="./Post of Project Manager result.html" onclick="getInput()"><button>Submit</button> </a>
+</div>
+</body>
+</html>

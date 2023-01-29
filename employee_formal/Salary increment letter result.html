@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Salary increment letter</title>
+<style>
+   	h1{
+    	text-align: center;
+               color:blue;
+    }
+div.div1 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  margin:10px;
+ } 
+div.div2 {
+  position: absolute;
+  right: 1050px;
+  width: 400px;
+  height: 140px;
+  }
+div.div3 {
+  margin:20px;
+  width: 100%;
+ 
+  }
+div.div4 {
+  position: absolute;
+  right: 50px;
+  width: 200px;
+  height: 140px;
+  }
+  
+body{
+  margin: 20px;
+  background-image: url("bg.jpeg");
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+div.divn {
+  font-size: 20px;
+}
+   </style>
+</head>
+<body >
+<h1>Salary increment Letter</h1>
+<div class="divn">
+<p>From</p>
+<div class="div1">
+    <span id="resultName"></span>
+
+    <script>
+        document.getElementById("resultName").innerHTML = localStorage.getItem("from");   
+   </script>
+<br>
+</div>
+<br>
+<br><br><br><br>
+<p>To</p>
+<div class="div2">
+<br>
+<span id="to"></span>
+<script>        document.getElementById("to").innerHTML = localStorage.getItem("to"); </script>
+</div>
+
+<br><br><br><br>
+
+<p>Subject:Requesting to increase my salary package</p>
+<br>
+<p>Respected Sir/Madam,</p>
+<br>
+<div class="div3">
+<p>I want to ask you to increase my salary. Along with my experience, my responsibilities have also increased, and now I am also working for an additional person. Which, of course, requires more effort and time. In short, I request you to increase my salary so that I can work harder and you can expect good results from me. Hopefully, I will get a salary accrual as per my expectations. Thanks for your time and consideration.
+</p>
+</div>
+<p>Thanking you</p>
+<br>
+<div class="div4">
+<p>Yours faithfully,</p>
+<br>
+<p>_(your name)</p>
+</div>
+</div>
+</body>
+</html>
